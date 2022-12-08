@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Hi {{day}} {{data.note.name}}</h1>
+<div mat-dialog-content>
+    <b>Role: </b><h3>{{data.note.role}}</h3>
+    <b>Address: </b><h3>{{data.note.address}}</h3>
+</div>
+<div mat-dialog-actions class="close">
+  <button mat-button (click)="onNoClick()">Close</button>
+</div>

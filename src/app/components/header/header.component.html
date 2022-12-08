@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="sidebar()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>APP</span>
+            <button mat-icon-button>
+                <mat-icon>settings</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon>help_outline</mat-icon>
+            </button>
+            <button mat-button [matMenuTriggerFor]="menu">
+                <mat-icon>person_outline</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                sign out
+            </button>
+            </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>
